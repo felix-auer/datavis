@@ -490,5 +490,294 @@
    "name": "Bombing/Explosion",
    "parent": 85,
    "size": 22
+ },
+ {
+   "id": 87,
+   "name": "Al-Qaida in Saudi Arabia",
+   "parent": 1
+ },
+ {
+   "id": 88,
+   "name": "Citizens",
+   "parent": 87
+ },
+ {
+   "id": 89,
+   "name": "Armed Assault",
+   "parent": 88,
+   "size": 14
+ },
+ {
+   "id": 90,
+   "name": "Bombing/Explosion",
+   "parent": 88,
+   "size": 51
+ },
+ {
+   "id": 91,
+   "name": "Government",
+   "parent": 87
+ },
+ {
+   "id": 92,
+   "name": "Bombing/Explosion",
+   "parent": 91,
+   "size": 8
+ },
+ {
+   "id": 93,
+   "name": "Al-Qaida in the Arabian Peninsula (AQAP)",
+   "parent": 1
+ },
+ {
+   "id": 94,
+   "name": "Citizens",
+   "parent": 93
+ },
+ {
+   "id": 95,
+   "name": "Armed Assault",
+   "parent": 94,
+   "size": 41
+ },
+ {
+   "id": 96,
+   "name": "Assassination",
+   "parent": 94,
+   "size": 23
+ },
+ {
+   "id": 97,
+   "name": "Bombing/Explosion",
+   "parent": 94,
+   "size": 387
+ },
+ {
+   "id": 98,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 94,
+   "size": 1
+ },
+ {
+   "id": 99,
+   "name": "Hijacking",
+   "parent": 94,
+   "size": 1
+ },
+ {
+   "id": 100,
+   "name": "Hostage Taking (Barricade Incident)",
+   "parent": 94,
+   "size": 22
+ },
+ {
+   "id": 101,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 94,
+   "size": 30
+ },
+ {
+   "id": 102,
+   "name": "Unarmed Assault",
+   "parent": 94,
+   "size": 1
+ },
+ {
+   "id": 103,
+   "name": "Unknown",
+   "parent": 94,
+   "size": 7
+ },
+ {
+   "id": 104,
+   "name": "Government",
+   "parent": 93
+ },
+ {
+   "id": 105,
+   "name": "Armed Assault",
+   "parent": 104,
+   "size": 139
+ },
+ {
+   "id": 106,
+   "name": "Assassination",
+   "parent": 104,
+   "size": 122
+ },
+ {
+   "id": 107,
+   "name": "Bombing/Explosion",
+   "parent": 104,
+   "size": 460
+ },
+ {
+   "id": 108,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 104,
+   "size": 3
+ },
+ {
+   "id": 109,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 104,
+   "size": 19
+ },
+ {
+   "id": 110,
+   "name": "Unknown",
+   "parent": 104,
+   "size": 17
+ },
+ {
+   "id": 111,
+   "name": "Infrastructure",
+   "parent": 93
+ },
+ {
+   "id": 112,
+   "name": "Armed Assault",
+   "parent": 111,
+   "size": 15
+ },
+ {
+   "id": 113,
+   "name": "Bombing/Explosion",
+   "parent": 111,
+   "size": 12
+ },
+ {
+   "id": 114,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 111,
+   "size": 1
+ },
+ {
+   "id": 115,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 111,
+   "size": 9
+ },
+ {
+   "id": 116,
+   "name": "Instituations",
+   "parent": 93
+ },
+ {
+   "id": 117,
+   "name": "Armed Assault",
+   "parent": 116,
+   "size": 5
+ },
+ {
+   "id": 118,
+   "name": "Assassination",
+   "parent": 116,
+   "size": 17
+ },
+ {
+   "id": 119,
+   "name": "Bombing/Explosion",
+   "parent": 116,
+   "size": 32
+ },
+ {
+   "id": 120,
+   "name": "Hostage Taking (Barricade Incident)",
+   "parent": 116,
+   "size": 1
+ },
+ {
+   "id": 121,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 116,
+   "size": 1
+ },
+ {
+   "id": 122,
+   "name": "Media",
+   "parent": 93
+ },
+ {
+   "id": 123,
+   "name": "Bombing/Explosion",
+   "parent": 122,
+   "size": 4
+ },
+ {
+   "id": 124,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 122,
+   "size": 1
+ },
+ {
+   "id": 125,
+   "name": "Hostage Taking (Barricade Incident)",
+   "parent": 122,
+   "size": 12
+ },
+ {
+   "id": 126,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 122,
+   "size": 1
+ },
+ {
+   "id": 127,
+   "name": "Military",
+   "parent": 93
+ },
+ {
+   "id": 128,
+   "name": "Armed Assault",
+   "parent": 127,
+   "size": 845
+ },
+ {
+   "id": 129,
+   "name": "Assassination",
+   "parent": 127,
+   "size": 131
+ },
+ {
+   "id": 130,
+   "name": "Bombing/Explosion",
+   "parent": 127,
+   "size": 817
+ },
+ {
+   "id": 131,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 127,
+   "size": 10
+ },
+ {
+   "id": 132,
+   "name": "Hostage Taking (Barricade Incident)",
+   "parent": 127,
+   "size": 13
+ },
+ {
+   "id": 133,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 127,
+   "size": 313
+ },
+ {
+   "id": 134,
+   "name": "Unknown",
+   "parent": 127,
+   "size": 201
+ },
+ {
+   "id": 135,
+   "name": "Other",
+   "parent": 93
+ },
+ {
+   "id": 136,
+   "name": "Bombing/Explosion",
+   "parent": 135,
+   "size": 12
  }
 ]
