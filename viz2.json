@@ -12,7 +12,7 @@
    "id": 3,
    "name": "Armed Assault",
    "parent": 2,
-   "size": 501
+   "size": 511
  },
  {
    "id": 4,
@@ -30,7 +30,7 @@
    "id": 6,
    "name": "Facility/Infrastructure Attack",
    "parent": 2,
-   "size": 0
+   "size": 1
  },
  {
    "id": 7,
@@ -51,7 +51,7 @@
    "size": 2
  },
  {
-   "id": 10,
+   "id": 11,
    "name": "Unknown",
    "parent": 2,
    "size": 239
@@ -65,7 +65,7 @@
    "id": 12,
    "name": "Armed Assault",
    "parent": 11,
-   "size": 30
+   "size": 31
  },
  {
    "id": 13,
@@ -83,7 +83,7 @@
    "id": 15,
    "name": "Hijacking",
    "parent": 11,
-   "size": 3004
+   "size": 3114
  },
  {
    "id": 16,
@@ -109,7 +109,7 @@
    "size": 63
  },
  {
-   "id": 20,
+   "id": 21,
    "name": "Bombing/Explosion",
    "parent": 17,
    "size": 3854
@@ -153,7 +153,7 @@
    "id": 27,
    "name": "Armed Assault",
    "parent": 24,
-   "size": 1045
+   "size": 1145
  },
  {
    "id": 28,
@@ -168,7 +168,7 @@
    "size": 1724
  },
  {
-   "id": 30,
+   "id": 31,
    "name": "Facility/Infrastructure Attack",
    "parent": 24,
    "size": 13
@@ -177,7 +177,7 @@
    "id": 31,
    "name": "Hijacking",
    "parent": 24,
-   "size": 0
+   "size": 1
  },
  {
    "id": 32,
@@ -195,7 +195,7 @@
    "id": 34,
    "name": "Unarmed Assault",
    "parent": 24,
-   "size": 0
+   "size": 1
  },
  {
    "id": 35,
@@ -224,13 +224,13 @@
    "id": 39,
    "name": "Bombing/Explosion",
    "parent": 36,
-   "size": 610
+   "size": 611
  },
  {
-   "id": 40,
+   "id": 41,
    "name": "Facility/Infrastructure Attack",
    "parent": 36,
-   "size": 0
+   "size": 1
  },
  {
    "id": 41,
@@ -259,7 +259,7 @@
    "id": 45,
    "name": "Armed Assault",
    "parent": 44,
-   "size": 3018
+   "size": 3118
  },
  {
    "id": 46,
@@ -271,7 +271,7 @@
    "id": 47,
    "name": "Bombing/Explosion",
    "parent": 44,
-   "size": 5012
+   "size": 5112
  },
  {
    "id": 48,
@@ -286,10 +286,10 @@
    "size": 16
  },
  {
-   "id": 50,
+   "id": 51,
    "name": "Hostage Taking (Barricade Incident)",
    "parent": 44,
-   "size": 380
+   "size": 381
  },
  {
    "id": 51,
@@ -324,7 +324,7 @@
    "id": 3,
    "name": "Armed Assault",
    "parent": 2,
-   "size": 501
+   "size": 511
  },
  {
    "id": 4,
@@ -342,7 +342,7 @@
    "id": 6,
    "name": "Facility/Infrastructure Attack",
    "parent": 2,
-   "size": 0
+   "size": 1
  },
  {
    "id": 7,
@@ -363,7 +363,7 @@
    "size": 2
  },
  {
-   "id": 10,
+   "id": 11,
    "name": "Unknown",
    "parent": 2,
    "size": 239
@@ -377,7 +377,7 @@
    "id": 12,
    "name": "Armed Assault",
    "parent": 11,
-   "size": 30
+   "size": 31
  },
  {
    "id": 13,
@@ -395,7 +395,7 @@
    "id": 15,
    "name": "Hijacking",
    "parent": 11,
-   "size": 3004
+   "size": 3114
  },
  {
    "id": 16,
@@ -421,7 +421,7 @@
    "size": 63
  },
  {
-   "id": 20,
+   "id": 21,
    "name": "Bombing/Explosion",
    "parent": 17,
    "size": 3854
@@ -465,7 +465,7 @@
    "id": 27,
    "name": "Armed Assault",
    "parent": 24,
-   "size": 1045
+   "size": 1145
  },
  {
    "id": 28,
@@ -480,7 +480,7 @@
    "size": 1724
  },
  {
-   "id": 30,
+   "id": 31,
    "name": "Facility/Infrastructure Attack",
    "parent": 24,
    "size": 13
@@ -489,7 +489,7 @@
    "id": 31,
    "name": "Hijacking",
    "parent": 24,
-   "size": 0
+   "size": 1
  },
  {
    "id": 32,
@@ -507,7 +507,7 @@
    "id": 34,
    "name": "Unarmed Assault",
    "parent": 24,
-   "size": 0
+   "size": 1
  },
  {
    "id": 35,
@@ -536,13 +536,13 @@
    "id": 39,
    "name": "Bombing/Explosion",
    "parent": 36,
-   "size": 610
+   "size": 611
  },
  {
-   "id": 40,
+   "id": 41,
    "name": "Facility/Infrastructure Attack",
    "parent": 36,
-   "size": 0
+   "size": 1
  },
  {
    "id": 41,
@@ -571,7 +571,7 @@
    "id": 45,
    "name": "Armed Assault",
    "parent": 44,
-   "size": 3018
+   "size": 3118
  },
  {
    "id": 46,
@@ -583,7 +583,7 @@
    "id": 47,
    "name": "Bombing/Explosion",
    "parent": 44,
-   "size": 5012
+   "size": 5112
  },
  {
    "id": 48,
@@ -598,10 +598,10 @@
    "size": 16
  },
  {
-   "id": 50,
+   "id": 51,
    "name": "Hostage Taking (Barricade Incident)",
    "parent": 44,
-   "size": 380
+   "size": 381
  },
  {
    "id": 51,
