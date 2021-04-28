@@ -294,5 +294,201 @@
    "name": "Bombing/Explosion",
    "parent": 50,
    "size": 139
+ },
+ {
+   "id": 53,
+   "name": "Al-Qaida in Iraq",
+   "parent": 1
+ },
+ {
+   "id": 54,
+   "name": "Citizens",
+   "parent": 53
+ },
+ {
+   "id": 55,
+   "name": "Armed Assault",
+   "parent": 54,
+   "size": 139
+ },
+ {
+   "id": 56,
+   "name": "Assassination",
+   "parent": 54,
+   "size": 2
+ },
+ {
+   "id": 57,
+   "name": "Bombing/Explosion",
+   "parent": 54,
+   "size": 2189
+ },
+ {
+   "id": 58,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 54,
+   "size": 6
+ },
+ {
+   "id": 59,
+   "name": "Unknown",
+   "parent": 54,
+   "size": 5
+ },
+ {
+   "id": 60,
+   "name": "Government",
+   "parent": 53
+ },
+ {
+   "id": 61,
+   "name": "Armed Assault",
+   "parent": 60,
+   "size": 40
+ },
+ {
+   "id": 62,
+   "name": "Assassination",
+   "parent": 60,
+   "size": 39
+ },
+ {
+   "id": 63,
+   "name": "Bombing/Explosion",
+   "parent": 60,
+   "size": 484
+ },
+ {
+   "id": 64,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 60,
+   "size": 20
+ },
+ {
+   "id": 65,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 60,
+   "size": 6
+ },
+ {
+   "id": 66,
+   "name": "Unknown",
+   "parent": 60,
+   "size": 17
+ },
+ {
+   "id": 67,
+   "name": "Infrastructure",
+   "parent": 53
+ },
+ {
+   "id": 68,
+   "name": "Armed Assault",
+   "parent": 67,
+   "size": 5
+ },
+ {
+   "id": 69,
+   "name": "Bombing/Explosion",
+   "parent": 67,
+   "size": 81
+ },
+ {
+   "id": 70,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 67,
+   "size": 1
+ },
+ {
+   "id": 71,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 67,
+   "size": 1
+ },
+ {
+   "id": 72,
+   "name": "Instituations",
+   "parent": 53
+ },
+ {
+   "id": 73,
+   "name": "Armed Assault",
+   "parent": 72,
+   "size": 6
+ },
+ {
+   "id": 74,
+   "name": "Assassination",
+   "parent": 72,
+   "size": 5
+ },
+ {
+   "id": 75,
+   "name": "Bombing/Explosion",
+   "parent": 72,
+   "size": 181
+ },
+ {
+   "id": 76,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 72,
+   "size": 1
+ },
+ {
+   "id": 77,
+   "name": "Media",
+   "parent": 53
+ },
+ {
+   "id": 78,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 77,
+   "size": 1
+ },
+ {
+   "id": 79,
+   "name": "Military",
+   "parent": 53
+ },
+ {
+   "id": 80,
+   "name": "Armed Assault",
+   "parent": 79,
+   "size": 191
+ },
+ {
+   "id": 81,
+   "name": "Assassination",
+   "parent": 79,
+   "size": 17
+ },
+ {
+   "id": 82,
+   "name": "Bombing/Explosion",
+   "parent": 79,
+   "size": 897
+ },
+ {
+   "id": 83,
+   "name": "Facility/Infrastructure Attack",
+   "parent": 79,
+   "size": 13
+ },
+ {
+   "id": 84,
+   "name": "Hostage Taking (Kidnapping)",
+   "parent": 79,
+   "size": 16
+ },
+ {
+   "id": 85,
+   "name": "Other",
+   "parent": 53
+ },
+ {
+   "id": 86,
+   "name": "Bombing/Explosion",
+   "parent": 85,
+   "size": 22
  }
 ]
