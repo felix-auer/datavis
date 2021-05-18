@@ -1,0 +1,298 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Terrorist activites by sub-group",
+  "width": 800,
+  "height": 250,
+  "padding": 5,
+  "autosize": "pad",
+
+  "config": {
+    "text": {
+      "font": "Ideal Sans, Avenir Next, Helvetica"
+    },
+    "title": {
+      "font": "Ideal Sans, Avenir Next, Helvetica",
+      "fontWeight": 500,
+      "fontSize": 17,
+      "limit": -1
+    },
+    "axis": {
+      "labelFont": "Ideal Sans, Avenir Next, Helvetica",
+      "labelFontSize": 11
+    }
+  },
+
+  "signals": [
+    { "name": "size", "value": 0.5 },
+    { "name": "domainMax", "value": 6000 },
+    { "name": "bandwidth", "value": 0.008 },
+    { "name": "offsets",
+      "value": {
+        "Al-Qaida": -1,
+        "Al-Qaida Islamic Maghreb": -1.5,
+        "Al-Qaida in Iraq": -2,
+        "Al-Shabaab": -3,
+        "Al-Qaida Arabian Peninsula": -2,
+        "Al-Nusrah Front": -1,
+        "Jamaat Nusrat al-Islam wal Muslimin": -3.5,
+        "Hay'at Tahrir al-Sham": 31
+      }
+    },
+    {
+      "name": "categories",
+      "value": [
+        "Al-Qaida",
+        "Al-Qaida in the Islamic Maghreb (AQIM)",
+        "Al-Qaida in Iraq",
+        "Al-Shabaab",
+        "Al-Qaida in the Arabian Peninsula (AQAP)",
+        "Al-Nusrah Front",
+        "Hay'at Tahrir al-Sham",
+        "Jamaat Nusrat al-Islam wal Muslimin (JNIM)"
+      ]
+    },
+    {
+      "name": "names",
+      "value": [
+        "Al-Qaida",
+        "Al-Qaida Islamic Maghreb",
+        "Al-Qaida in Iraq",
+        "Al-Shabaab",
+        "Al-Qaida Arabian Peninsula",
+        "Al-Nusrah Front",
+        "Jamaat Nusrat al-Islam wal Muslimin",
+        "Hay'at Tahrir al-Sham"
+      ]
+    },
+    {
+      "name": "colors",
+      "value": [
+        "#4e79a7",
+        "#f28e2b",
+        "#e15759",
+        "#76b7b2",
+        "#59a14e",
+        "#edc949",
+        "#b07aa2",
+        "#ff9da7"
+      ]
+    }
+  ],
+
+  "data": [
+    {
+      "name": "source",
+      "url": "https://raw.githubusercontent.com/felix-auer/datavis/main/test.json"
+    },
+    {
+      "name": "annotation",
+      "values": [
+        {"name": "2000", "align": "center",   "lat": 0.2597},
+        {"name": "1990", "align": "center", "lat": -0.01},
+        {"name": "2010", "align": "center", "lat": 0.6324},
+        {"name": "9/11 Terrorist ", "align": "left", "lat": 0.3223},
+        {"name": "US Intervention Syria", "align": "center", "lat": 0.8036},
+        {"name": "2019", "align": "center", "lat": 1}
+      ]
+    }
+  ],
+
+  "title": {
+    "text": "Terrorist activities by Organisation through Time",
+    "orient": "top",
+    "anchor": "start",
+    "frame": "group",
+    "encode": {
+      "update": {
+        "dx": {"value": 200}
+      }
+    }
+  },
+
+  "scales": [
+    {
+      "name": "xscale",
+      "type": "linear",
+      "range": "width",
+      "zero": false,
+      "domain": {"data": "source", "field": "lat"}
+    },
+    {
+      "name": "yscale",
+      "type": "band",
+      "range": "height",
+      "round": true,
+      "padding": 0,
+      "domain": {"signal": "categories"}
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "range": {"signal": "colors"},
+      "domain": {"signal": "categories"}
+    },
+    {
+      "name": "names",
+      "type": "ordinal",
+      "domain": {"signal": "categories"},
+      "range": {"signal": "names"}
+    }
+  ],
+
+  "axes": [
+    {
+      "orient": "right",
+      "scale": "yscale",
+      "domain": false,
+      "ticks": false,
+      "encode": {
+        "labels": {
+          "update": {
+            "dx": {"value": 30},
+            "dy": {"value": 2},
+            "y": {"scale": "yscale", "field": "value", "band": 1},
+            "text": {"scale": "names", "field": "value"},
+            "baseline": {"value": "bottom"}
+          }
+        }
+      }
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "rule",
+      "from": {"data": "annotation"},
+      "encode": {
+        "update": {
+          "x": {"signal": "round(scale('xscale', datum.lat)) + 0.5"},
+          "y": {"value": -140},
+          "x2": {"signal": "round(scale('xscale', datum.lat)) + 0.5"},
+          "y2": {"signal": "height", "offset": 6},
+          "stroke": {"value": "#999999"},
+          "strokeDash": {"value": [3, 2]}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "annotation"},
+      "encode": {
+        "update": {
+          "x": {"scale": "xscale", "field": "lat", "offset": 0},
+          "dx": {"signal": "datum.align === 'left' ? -1 : 0"},
+          "y": {"signal": "height", "offset": 6},
+          "align": {"field": "align"},
+          "baseline": {"value": "top"},
+          "text": {"field": "name"},
+          "fontStyle": {"value": "italic"}
+        }
+      }
+    },
+    {
+      "type": "group",
+      "from": {
+        "facet": {
+          "data": "source",
+          "name": "category",
+          "groupby": "key",
+          "aggregate": {
+            "ops": ["min", "max", "count"],
+            "fields": ["lat", "lat", "lat"],
+            "as": ["min_lat", "max_lat", "count"]
+          }
+        }
+      },
+      "encode": {
+        "update": {
+          "y": {"scale": "yscale", "field": "key"},
+          "width": {"signal": "width"},
+          "height": {"scale": "yscale", "band": 1}
+        }
+      },
+      "sort": {
+        "field": "y",
+        "order": "ascending"
+      },
+      "signals": [
+        {"name": "height", "update": "bandwidth('yscale')"}
+      ],
+      "data": [
+        {
+          "name": "density",
+          "source": "category",
+          "transform": [
+            {
+              "type": "density",
+              "steps": 200,
+              "extent": {"signal": "domain('xscale')"},
+              "distribution": {
+                "function": "kde",
+                "field": "lat",
+                "bandwidth": {"signal": "bandwidth"}
+              }
+            }
+          ]
+        }
+      ],
+      "scales": [
+        {
+          "name": "yinner",
+          "type": "linear",
+          "range": [{"signal": "height"}, {"signal": "10 - size * height*10"}],
+          "domain": [0, {"signal": "domainMax*3"}]
+        }
+      ],
+      "marks": [
+        {
+          "type": "area",
+          "from": {"data": "density"},
+          "encode": {
+            "enter": {
+              "fill": {"scale": "color", "field": {"parent": "key"}},
+              "fillOpacity": {"value": 0.6},
+              "stroke": {"value": "white"},
+              "strokeWidth": {"value": 1}
+            },
+            "update": {
+              "x": {"scale": "xscale", "field": "value"},
+              "y": {"scale": "yinner", "signal": "parent.count * datum.density"},
+              "y2": {"scale": "yinner", "value": 0}
+            }
+          }
+        },
+        {
+          "type": "rule",
+          "clip": true,
+          "encode": {
+            "update": {
+              "y": {"signal": "height", "offset": -0.5},
+              "x": {"scale": "xscale", "field": {"parent": "min_lat"},
+                    "offset": {"signal": "scale('xscale', 0) - scale('xscale', 2*bandwidth) + (offsets[parent.key] || 1) - 3"}},
+              "x2": {"signal": "width"},
+              "stroke": {"value": "#990000"},
+              "strokeWidth": {"value": 0.7},
+              "strokeOpacity": {"value": 0.1}
+            }
+          }
+        },
+        {
+          "type": "symbol",
+          "from": {"data": "category"},
+          "encode": {
+            "enter": {
+              "fillOpacity": {"value": 0},
+              "size": {"value": 50},
+              "tooltip": {"field": "name"}
+            },
+            "update": {
+              "x": {"scale": "xscale", "field": "lat"},
+              "y": {"scale": "yscale", "band": 0.15},
+              "fill": {"scale": "color", "field": "key"}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
